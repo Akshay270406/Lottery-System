@@ -88,15 +88,3 @@ Frontend will run at [http://localhost:3000](http://localhost:3000).
 - Ganache must be kept running during development.
 - MetaMask account must match the admin address for creating/picking winners.
 
----
-# Team Members
-- Lathika Priya Eedubilli (230001026)
-- Harshitha Goskula (230001027)
-- Sai Babu (230001036)
-- Devi Sri Prasad (230001015)
-- Rishitha (230001028)
-- Gnanika (230041007)
----
-# Instructor
-- Subhra Mazumdar
-
