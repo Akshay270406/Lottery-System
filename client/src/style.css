@@ -1,0 +1,351 @@
+/* Main app styling */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.admin-badge {
+  background-color: #f06292;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.account-info {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border-left: 5px solid #c62828;
+}
+
+/* Admin panel styling */
+.admin-panel {
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #c8e6c9;
+}
+
+.create-lottery-section {
+  margin-bottom: 20px;
+}
+
+.create-lottery-section form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.create-lottery-section input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.create-lottery-section button {
+  grid-column: span 2;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-lottery-section button:hover {
+  background-color: #388e3c;
+}
+
+.admin-lotteries-section {
+  margin-top: 30px;
+}
+
+.admin-lottery-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+/* Lottery card styling */
+.lottery-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.lottery-card:hover {
+  transform: translateY(-5px);
+}
+
+.lottery-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 20px;
+}
+
+.status-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.open {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.status-badge.closed {
+  background-color: #ffecb3;
+  color: #ff6f00;
+}
+
+.lottery-details {
+  margin-bottom: 20px;
+}
+
+.lottery-details p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.ticket-note {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 15px !important;
+  border-left: 4px solid #1565c0;
+}
+
+.admin-note {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 15px !important;
+  border-left: 4px solid #6a1b9a;
+}
+
+.lottery-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.primary-btn, .admin-btn, .claim-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #1976d2;
+}
+
+.admin-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.admin-btn:hover {
+  background-color: #f57c00;
+}
+
+.claim-btn {
+  background-color: #9c27b0;
+  color: white;
+  animation: pulse 1.5s infinite;
+}
+
+.claim-btn:hover {
+  background-color: #7b1fa2;
+}
+
+button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* Winner styling */
+.winner-info {
+  margin-top: 15px;
+  background-color: #f8bbd0;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #c2185b;
+}
+
+.winner-highlight {
+  font-weight: bold;
+  color: #c2185b;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Winner list styling */
+.winner-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.winners-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.winner-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #9c27b0;
+}
+
+.winner-item.claimed {
+  border-left: 4px solid #4caf50;
+}
+
+.winner-item.unclaimed {
+  border-left: 4px solid #ff9800;
+}
+
+.winner-lottery {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.winner-address, .winner-prize {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Filter controls */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-controls button {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-controls button.active {
+  background-color: #2196f3;
+  color: white;
+  border-color: #2196f3;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Loading states */
+.loading-container {
+  text-align: center;
+  padding: 40px;
+  color: #757575;
+}
+
+.no-lotteries {
+  text-align: center;
+  padding: 40px;
+  color: #757575;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+/* Lottery list */
+.lottery-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .create-lottery-section form {
+    grid-template-columns: 1fr;
+  }
+  
+  .create-lottery-section button {
+    grid-column: span 1;
+  }
+  
+  .admin-lottery-list,
+  .lottery-list {
+    grid-template-columns: 1fr;
+  }
+}
