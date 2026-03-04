@@ -76,10 +76,10 @@ Frontend will run at [http://localhost:3000](http://localhost:3000).
 ### 8. Ready to Play!
 
 - Admin can create lotteries
-- Users can buy tickets
+- Users can buy tickets with enough balance
 - Admin can pick winners
-- Results are automatically shown
-- And fund will be automatically transferred
+- Results are automatically shown to users
+- And fund will be automatically transferred to the winners
 ---
 
 #  Quick Notes
